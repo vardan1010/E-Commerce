@@ -1,0 +1,157 @@
+
+@keyframes head-section-show
+{
+     0%
+     {
+          background-color: rgb(255, 94, 0);
+     }    
+     25%
+     {
+          background-color: rgb(255, 145, 0);
+     }
+     50%
+     {
+          background-color:rgb(255, 255, 0);
+     }
+     75%
+     {
+          background-color: rgb(211, 7, 92);
+     }
+     100%
+     {
+          background-color: rgb(209, 5, 192);
+     }
+}
+@keyframes sentence {
+
+     0%
+     {
+          left:0%;
+     }
+     100%
+     {
+          left: 85%;
+     }
+}
+
+.head-section
+{
+     display:flex;
+     position:fixed;
+     z-index:2;
+     top:0;
+     left:0;
+     right:0;
+     height:70px;
+     animation:head-section-show 4s 0s infinite linear;
+     align-items: center;
+
+}
+.left-section
+{
+     width:25%;
+     display: flex;
+     flex-direction: column;
+     justify-content:space-evenly;
+}
+.middle-section
+{
+     flex:1;
+     font-size: 15px;
+     font-family:'Times New Roman', Times, serif;
+     vertical-align: middle;
+}
+.mid-section-head-title
+{
+     padding-top:14px;
+}
+.mid-section-head-loc
+{
+     margin: 0 auto;
+     padding-left: 35%;
+}
+.right-section
+{
+     width:25%;
+     margin-left: 1%;
+     display: flex;
+     align-items:center;
+     justify-content:end;
+}
+.user-photo
+{
+     background:transparent;
+     width:40px;
+     height:40px;
+     border-radius: 20px;
+     border:none;
+     margin-left: 30%;
+}
+.User-name
+{
+     display: inline-block;
+     background-color: rgba(128, 128, 128, 0.959);
+     border-radius: 20px;
+     border:1px solid black;
+     padding:8px 20px;
+     margin-right: 5%;
+}
+.login-user-detail
+{
+     position:fixed;
+     top:40%;
+     left:40%;
+     height:200px;
+     padding:10px 20px;
+     align-items: center;
+     border:none;
+     border-radius: 20px;
+}
+.login-form-header
+{
+     margin-left:30%;
+}
+.second-section
+{
+     display: flex;
+     justify-items: center;
+     justify-content: space-between;
+     margin-top: 5px;
+}
+.link1
+{
+     text-decoration: underline;
+     color:red;
+}
+.link1:hover
+{
+     color:green;
+}
+.link1:visited
+{
+     color:orange;
+}
+.link2
+{
+     color:rgb(211, 7, 92);
+}
+.link2:hover{
+     color:aqua;
+}
+.link2:visited
+{
+     color:chocolate;
+}
+.moving-text
+{
+     background-color: rgba(255, 208, 0, 0.747);
+     position: fixed;
+     left:-110%;
+     right:0;
+     bottom:0;
+     font-size: 20px;
+     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-weight:500;
+     animation: sentence 5s 0s infinite linear;
+     animation-direction: alternate-reverse;
+}
