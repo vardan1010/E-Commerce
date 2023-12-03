@@ -33,7 +33,28 @@
           left: 85%;
      }
 }
-
+@keyframes blink-form {
+     0%
+     {
+          box-shadow: 0px 0px 6px rgb(0, 0, 0);
+     }
+     25%
+     {
+          box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.623);
+     }
+     50%
+     {
+          box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.438);
+     }
+     75%
+     {
+          box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.151);
+     }
+     100%
+     {
+          box-shadow: 0px 0px 6px rgb(0, 0, 0);
+     }
+}
 .head-section
 {
      display:flex;
@@ -44,6 +65,7 @@
      right:0;
      height:70px;
      animation:head-section-show 4s 0s infinite linear;
+     animation-direction: alternate-reverse;
      align-items: center;
 
 }
@@ -90,7 +112,6 @@
 .User-name
 {
      display: inline-block;
-     background-color: rgba(128, 128, 128, 0.959);
      border-radius: 20px;
      border:1px solid black;
      padding:8px 20px;
@@ -103,8 +124,9 @@
      left:40%;
      height:200px;
      padding:10px 20px;
+     line-height: 30px;
      align-items: center;
-     border:none;
+     animation:blink-form 5s 0s infinite linear;
      border-radius: 20px;
 }
 .login-form-header
