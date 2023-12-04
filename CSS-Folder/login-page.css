@@ -3,25 +3,30 @@
 {
      0%
      {
-          background-color: rgb(255, 94, 0);
+          /* background-color: rgb(255, 94, 0); */
+          opacity:1;
      }    
      25%
      {
-          background-color: rgb(255, 145, 0);
+          opacity:0.9;
+          /* background-color: rgb(255, 145, 0); */
      }
      50%
      {
-          background-color:rgb(255, 255, 0);
+          opacity:0.8;
+          /* background-color:rgb(255, 255, 0); */
      }
      75%
      {
-          background-color: rgb(211, 7, 92);
+          opacity:0.9;
+          /* background-color: rgb(211, 7, 92); */
      }
      100%
      {
-          background-color: rgb(209, 5, 192);
+          opacity:1;
+          /* background-color: rgb(209, 5, 192); */
      }
-}
+} 
 
 @keyframes blink-form {
      0%
@@ -52,10 +57,10 @@
      z-index:2;
      top:0;
      left:0;
+     background-color: gray;
      right:0;
-     height:70px;
-     animation:head-section-show 4s 0s infinite linear;
-     animation-direction: alternate-reverse;
+      max-height:15%;
+      animation:head-section-show 2s 0s infinite linear;
      align-items: center;
 
 }
@@ -109,14 +114,14 @@
 }
 .login-user-detail
 {
-     position:fixed;
-     top:40%;
+     position:absolute;
+     top:45%;
      left:40%;
-     height:200px;
+     height:170px;
      padding:10px 20px;
      line-height: 30px;
      align-items: center;
-     animation:blink-form 5s 0s infinite linear;
+     animation:blink-form 2s 0s infinite linear;
      border-radius: 20px;
 }
 .login-form-header
@@ -154,4 +159,39 @@
 {
      color:chocolate;
 }
-
+.password::placeholder,.email::placeholder
+{
+     font-family:'Courier New', Courier, monospace;
+     font-weight: 400;
+     font-size: 1rem;
+}
+.password,.email
+{
+     font-family: 'Courier New', Courier, monospace;
+}
+.button-submit
+{
+     padding: 8px 15px;
+     border:none;
+     border-radius: 20px;
+     margin-left: 65%;
+     margin-top: 4%;
+     background-color: gray;
+     transition: ease-in-out;
+     transition-duration: 250ms;
+     transition-delay: 0s;
+}
+.button-submit:hover
+{
+     opacity:0.8;
+     transition: ease-in-out;
+     transition-duration: 250ms;
+     transition-delay: 0s;
+}
+.button-submit:active
+{
+     opacity:0.5;
+     transition: ease-in-out;
+     transition-duration: 250ms;
+     transition-delay: 0s;
+}
