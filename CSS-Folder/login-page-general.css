@@ -3,12 +3,21 @@ body{
      background-image: url(/Images/login-page-background.jpg);
      background-size: cover;
      background-repeat: no-repeat;
-     padding-top: 70px;
+     padding-top: 10%;
+     overflow-x: hidden;
+     overflow-y: hidden;
 }
 h1,h2{
      margin:0px;
 }
 *
+{
+     text-decoration: none;
+}
+p{
+     margin:0;
+}
+a
 {
      text-decoration: none;
 }
