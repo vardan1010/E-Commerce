@@ -50,67 +50,56 @@
           box-shadow: 0px 0px 6px rgb(0, 0, 0);
      }
 }
-.head-section
+.head-container
+{
+     display: flex;
+     flex-direction: row;
+     position:fixed;
+     top:0;
+     align-items: center;
+     right:0;
+     left:0px;
+     height:130px;
+     background-color:black;
+     box-shadow:0px 0px 6px gray;
+}
+.one-section
 {
      display:flex;
-     position:fixed;
-     z-index:2;
-     top:0;
-     left:0;
-     background-color: gray;
-     right:0;
-      max-height:15%;
-      animation:head-section-show 2s 0s infinite linear;
+     width:75%;
+     flex-direction: row;
+     margin-left: 10px;
      align-items: center;
-
 }
-.left-section
+.logo-title
 {
-     width:25%;
-     display: flex;
-     flex-direction: column;
-     justify-content:space-evenly;
+     width:100px;
+     height:100px;
+     object-fit: contain;
+     border-radius: 50px;
+     object-position:center;
 }
-.middle-section
+.title-website
 {
-     flex:1;
-     font-size: 15px;
-     font-family:'Times New Roman', Times, serif;
+     font-family: 'Fira Sans', sans-serif;
+     font-size: 50px;
+     font-weight:600;
+     color:white;
+}
+.title-container
+{
+     margin-left: 35px;
+     align-items: center;
+}
+.address-section
+{
      vertical-align: middle;
-}
-.mid-section-head-title
-{
-     padding-top:14px;
-}
-.mid-section-head-loc
-{
-     margin: 0 auto;
-     padding-left: 35%;
-}
-.right-section
-{
-     width:25%;
-     margin-left: 1%;
-     display: flex;
-     align-items:center;
-     justify-content:end;
-}
-.user-photo
-{
-     background:transparent;
-     width:40px;
-     height:40px;
-     border-radius: 20px;
-     border:none;
-     margin-left: 30%;
-}
-.User-name
-{
-     display: inline-block;
-     border-radius: 20px;
-     border:1px solid black;
-     padding:8px 20px;
-     margin-right: 5%;
+     align-items: center;
+     color:white;
+     margin-left:40%;
+     font-family: 'Fira Sans', sans-serif;
+     margin-top: 2%;
+     font-size:25px;
 }
 .login-user-detail
 {
