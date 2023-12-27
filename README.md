@@ -1,3 +1,3 @@
 # E-Commerce
-My First Project about Cosmetic Website.
+Embarking on my initial venture: Crafting a cosmetic website.
 Author-Aadit Sharma aka Bardan Babu Shiwakoti.
